@@ -24,3 +24,32 @@ An AI-powered chatbot that answers questions from PDF documents using Retrieval-
 ---
 
 ## 📁 Project Structure
+
+rag_chatbot/
+│
+├── app.py
+├── chatbot.py
+├── create_vector_db.py
+├── requirements.txt
+├── .env.example
+│
+├── documents/
+├── vector_db/
+├── utils/
+└── README.md
+
+
+---
+
+## ⚙️ How It Works
+
+1. Load PDF documents  
+2. Split into chunks  
+3. Create embeddings  
+4. Store in FAISS vector DB  
+5. Retrieve relevant context  
+6. Send to Gemini LLM  
+7. Generate final answer  
+
+---
+
